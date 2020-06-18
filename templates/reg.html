@@ -7,6 +7,7 @@
 <body>
 原生form表单 <br>
 <form action="/reg" method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
     <label>用户名：</label><input type="text" name="username"><br>
     <label>密&ensp;&ensp;码：</label><input type="password" name="pwd"><br>
     <input type="submit" value="reg"><br>
@@ -14,6 +15,7 @@
 <hr>
 Flask-wtf 表单 <br>
 <form action="/wtf" method="post">
+    {{ form.csrf_token }}
     {{ form.username.label }}{{ form.username }}<br>
     {{ form.pwd.label }}{{ form.pwd }}<br>
     {{ form.submit }}
