@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax test</title>
+</head>
+<script src="../static/js/jquery-3.5.1.min.js"></script>
+<script src="../static/js/ajax.js"></script>
+
+<body>
+Ajax test <br>
+<br>
+<p>
+    username：<input type="text" id="01" onblur="ajax1()"> &nbsp;
+    <span id="info-1"></span>
+</p>
+<p>
+    password：<input type="password" id="02" onblur="ajax2()"> &nbsp;
+    <span id="info-2"></span>
+</p>
+<p>
+    turn to：<input type="text" id="03"> &nbsp;
+    <input type="button" value="go" onclick="ajax3()"> &nbsp;
+    <span id="info-3"></span>
+</p>
+<div>
+    <iframe src="" id="04" style="width: 100%; height: 500px"></iframe>
+</div>
+
+</body>
+</html>
